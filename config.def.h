@@ -84,18 +84,18 @@ const
 #endif // XRESOURCES_PATCH
 char *colors[][2] = {
 	/*               fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel]  = { "#eeeeee", "#005577" },
-	[SchemeOut]  = { "#000000", "#00ffff" },
+	[SchemeNorm] = { "#e5e9f0", "#2e3440" },
+	[SchemeSel]  = { "#eceff4", "#4c566a" },
+	[SchemeOut]  = { "#e5e9f0", "#2e3440" },
 	#if BORDER_PATCH
-	[SchemeBorder] = { "#000000", "#005577" },
+	[SchemeBorder] = { "#3b4252", "#3b4252" },
 	#endif // BORDER_PATCH
 	#if MORECOLOR_PATCH
 	[SchemeMid]  = { "#eeeeee", "#770000" },
 	#endif // MORECOLOR_PATCH
 	#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeSelHighlight]  = { "#ebcb8b", "#4c566a" },
+	[SchemeNormHighlight] = { "#ebcb8b", "#2e3440" },
 	#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
 	#if HIGHPRIORITY_PATCH
 	[SchemeHp]   = { "#bbbbbb", "#333333" },
@@ -135,7 +135,7 @@ static const char worddelimiters[] = " ";
 
 #if BORDER_PATCH
 /* Size of the window border */
-static unsigned int border_width = 0;
+static unsigned int border_width = 1;
 #endif // BORDER_PATCH
 
 #if PREFIXCOMPLETION_PATCH

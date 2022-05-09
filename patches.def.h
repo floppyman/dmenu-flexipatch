@@ -11,18 +11,18 @@
  * or xyw patches, to make the menu stand out from similarly coloured windows.
  * http://tools.suckless.org/dmenu/patches/border/
  */
-#define BORDER_PATCH 0
+#define BORDER_PATCH 1
 
 /* This patch makes dmenu case-insensitive by default, replacing the
  * case-insensitive -i option with a case sensitive -s option.
  * http://tools.suckless.org/dmenu/patches/case-insensitive/
  */
-#define CASEINSENSITIVE_PATCH 0
+#define CASEINSENSITIVE_PATCH 1
 
 /* This patch centers dmenu in the middle of the screen.
  * https://tools.suckless.org/dmenu/patches/center/
  */
-#define CENTER_PATCH 0
+#define CENTER_PATCH 1
 
 /* This patch enables color emoji in dmenu by removing a workaround for a BadLength error
  * in the Xft library when color glyphs are used.
@@ -57,13 +57,13 @@
  * to be used together with the fuzzymatch patch.
  * https://tools.suckless.org/dmenu/patches/fuzzyhighlight/
  */
-#define FUZZYHIGHLIGHT_PATCH 0
+#define FUZZYHIGHLIGHT_PATCH 1
 
 /* This patch adds support for fuzzy-matching to dmenu, allowing users to type non-consecutive
  * portions of the string to be matched.
  * https://tools.suckless.org/dmenu/patches/fuzzymatch/
  */
-#define FUZZYMATCH_PATCH 0
+#define FUZZYMATCH_PATCH 1
 
 /* Allows dmenu's entries to be rendered in a grid by adding a new -g flag to specify
  * the number of grid columns. The -g and -l options can be used together to create a
@@ -122,7 +122,7 @@
  * integrate dmenu with other UI elements that require a particular vertical size.
  * http://tools.suckless.org/dmenu/patches/line-height/
  */
-#define LINE_HEIGHT_PATCH 0
+#define LINE_HEIGHT_PATCH 1
 
 /* This patch adds a -wm flag which sets override_redirect to false; thus letting your window
  * manager manage the dmenu window.
@@ -218,7 +218,7 @@
  * it with dots. All data from stdin will be ignored.
  * https://tools.suckless.org/dmenu/patches/password/
  */
-#define PASSWORD_PATCH 0
+#define PASSWORD_PATCH 1
 
 /* This patch allows the selected text to be piped back out with dmenu. This can be useful if you
  * want to display the output of a command on the screen.
@@ -285,7 +285,7 @@
  * it can handle long text.
  * https://tools.suckless.org/dmenu/patches/scroll/
  */
-#define SCROLL_PATCH 0
+#define SCROLL_PATCH 1
 
 /* This patch allows the symbols, which are printed in dmenu to indicate that either the input
  * is too long or there are too many options to be shown in dmenu in one line, to be defined.
@@ -306,7 +306,7 @@
 /* This patch prevents dmenu from indenting items at the same level as the prompt length.
  * https://tools.suckless.org/dmenu/patches/vertfull/
  */
-#define VERTFULL_PATCH 0
+#define VERTFULL_PATCH 1
 
 /* Adds extended window manager hints such as _NET_WM_WINDOW_TYPE and _NET_WM_WINDOW_TYPE_DOCK.
  * https://github.com/Baitinq/dmenu/blob/master/patches/dmenu-wm_type.diff
